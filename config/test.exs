@@ -12,8 +12,7 @@ config :logger, level: :warn
 # Configure your database
 config :pomo, Pomo.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  url: System.get_env("DATABASE_URL")
+    || "postgresql://postgres:postgres@localhost/pomo_test",
   database: "pomo_test",
-  hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

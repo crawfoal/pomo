@@ -14,6 +14,9 @@
     "HOST": {
       "required": true
     },
+    "MIX_ENV": {
+      "required": true,
+    },
     "POOL_SIZE": {
       "required": true
     },
@@ -24,7 +27,11 @@
   "environments": {
     "test": {
       "env": {
+        "MIX_ENV": "test",
         "POOL_SIZE": "18"
+      },
+      "scripts": {
+        "test": "mix ci_test"
       }
     }
   },
