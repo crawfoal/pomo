@@ -29,9 +29,6 @@
       "env": {
         "MIX_ENV": "test",
         "POOL_SIZE": "18"
-      },
-      "scripts": {
-        "test": "mix ci_test"
       }
     }
   },
