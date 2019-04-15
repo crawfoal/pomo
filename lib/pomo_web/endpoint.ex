@@ -1,9 +1,9 @@
 defmodule PomoWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :pomo
 
-  socket "/socket", PomoWeb.UserSocket,
-    websocket: [timeout: 45_000],
-    longpoll: false
+  # socket "/socket", PomoWeb.UserSocket,
+  #   websocket: [timeout: 45_000],
+  #   longpoll: false
 
   # Serve at "/" the static files from "priv/static" directory.
   #
