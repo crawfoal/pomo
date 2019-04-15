@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.Pomo do
+defmodule Mix.Tasks.Release do
   use Mix.Task
 
   @shortdoc "Stuff that needs to run each time code is pushed to Heroku"
