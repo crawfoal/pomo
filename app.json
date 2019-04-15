@@ -21,6 +21,13 @@
       "required": true
     }
   },
+  "environments": {
+    "test": {
+      "env": {
+        "POOL_SIZE": "18"
+      }
+    }
+  },
   "formation": {
     "web": {
       "quantity": 1
